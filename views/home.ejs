@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home page</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <div id="todo-table">
+       <form action="">
+           <div class="item">
+            <input type="text" placeholder="Add a new item ..." name="item" required>
+           <button type="submit">Add Item</button>
+           </div>
+            <ul>
+                <% todoo.forEach(data => { %>
+                <li><%=data.item%></li>
+                <% }) %>
+               
+            </ul>
+       </form>
+   </div>
+<script src="/assets/todo-list.js"></script>
+</body>
+
+</html>
